@@ -896,7 +896,8 @@
         display: none;
     }
     .header {
-        padding: 5px 0;
+        font-size: 13px;
+        padding: 5px 6px;
         border-radius: 0 0 40px 40px;
     }
     .sandwich span {
@@ -1076,9 +1077,6 @@
     .menu-dropdown .item-header {
         margin-bottom: 20px;
         display: block;
-    }
-    .header {
-        font-size: 13px;
     }
     .sandwich.active .sw-topper {
         top: 7px;
