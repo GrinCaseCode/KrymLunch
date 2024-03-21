@@ -1086,6 +1086,9 @@
         height: 18px;
         font-size: 8px;
     }
+    .sandwich {
+        margin-left: 25px;
+    }
 }
 
 /* Small Devices, Tablets */
