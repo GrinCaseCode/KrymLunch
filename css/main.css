@@ -1446,10 +1446,13 @@ form {
 	padding: 24px 32px;
 }
 .menu__content {
-	display: none;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s;
 }
 .submenu__haschild.active .menu__content {
-	display: block;
+	visibility: visible;
+	opacity: 1;
 }
 .menu__content-inner {
 	height: 408px;
