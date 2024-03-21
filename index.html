@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="libs/intl-tel-input-master/build/css/intlTelInput.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.1" />
+	<link rel="stylesheet" href="css/media.css?ver=1.1" />
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<header class="header">
+			<div class="container-fluid">
+				<div class="header__wrap">
+					<div class="header__left">
+						<a href="#" class="logo">
+							<img src="img/logo.svg" alt="alt">
+						</a>
+						<div class="header__time">
+							<p>Приём заказа: <strong>7:00 — 11:00</strong></p>
+							<p>Доставка: <strong>11:00 — 14:00</strong></p>
+						</div>
+					</div>
+					<div class="header__right">
+						<div class="item-header">
+							<div class="item-header__title">Корпоративным клиентам</div>
+							<div class="item-header__value"><a href="tel:79782278639">7 (978) 227 86 39</a></div>
+						</div>
+						<div class="item-header">
+							<div class="item-header__title">Ваш город: <div class="choose-city"><span>Симферополь</span> <i class="far fa-chevron-down"></i></div></div>
+							<div class="item-header__value"><a href="tel:+79780232737">+7 (978) 023 27 37</a></div>
+						</div>
+						<a href="#callback" class="btn-main btn-main_block fancybox">Обратный звонок</a>
+						<a href="#" class="btn-basket">
+							<img src="img/basket.svg" alt="alt">
+							<div class="btn-basket__value">18</div>
+						</a>
+						<span class='sandwich'>
+							<span class='sw-topper'></span>
+							<span class='sw-bottom'></span>
+							<span class='sw-footer'></span>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu-dropdown">
+				<div class="container">
+					<ul class="menu">
+						<li class="menu__haschild active">
+							<a href="#">Меню</a>
+							<div class="menu__submenu">
+								<div class="row">
+									<div class="col-lg-4">
+										<ul>
+											<li class="submenu__haschild">
+												<a href="#">Бизнес ланчи</a>
+												<div class="menu__content">
+													<div class="menu__content-inner">
+														<h2 class="title-section"><span>Б</span>изнес ланчи</h2>
+														<div class="menu__descr">В ассортименте: твороженная запеканка, блинчики с творогом, со сгущенкой и джемом, компоты</div>
+														<div class="menu__price">СТОИМОСТЬ: <strong>от 150 ₽</strong></div>
+														<div class="menu__image">
+															<img src="img/menu1.png" alt="alt">
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="submenu__haschild">
+												<a href="#">Вегетарианское меню</a>
+												<div class="menu__content">
+													<div class="menu__content-inner">
+														<h2 class="title-section"><span>В</span>егетарианское меню</h2>
+														<div class="menu__descr">В ассортименте: твороженная запеканка, блинчики с творогом, со сгущенкой и джемом, компоты</div>
+														<div class="menu__price">СТОИМОСТЬ: <strong>от 80 ₽</strong></div>
+														<div class="menu__image">
+															<img src="img/menu1.png" alt="alt">
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="submenu__haschild active">
+												<a href="#">Напитки и десерты</a>
+												<div class="menu__content">
+													<div class="menu__content-inner">
+														<h2 class="title-section"><span>Н</span>апитки и десерты</h2>
+														<div class="menu__descr">В ассортименте: твороженная запеканка, блинчики с творогом, со сгущенкой и джемом, компоты</div>
+														<div class="menu__price">СТОИМОСТЬ: <strong>от 50 ₽</strong></div>
+														<div class="menu__image">
+															<img src="img/menu1.png" alt="alt">
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li><a href="#">Оплата и доставка</a></li>
+						<li><a href="#">Документы</a></li>
+						<li><a href="#">Корпоративным партнерам</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<div class="menu-dropdown__mobile">
+						<div class="item-header">
+							<div class="item-header__title">Корпоративным клиентам</div>
+							<div class="item-header__value"><a href="tel:79782278639">7 (978) 227 86 39</a></div>
+						</div>
+						<div class="item-header">
+							<div class="item-header__title">Ваш город: <div class="choose-city"><span>Симферополь</span> <i class="far fa-chevron-down"></i></div></div>
+							<div class="item-header__value"><a href="tel:+79780232737">+7 (978) 023 27 37</a></div>
+						</div>
+						<a href="#callback" class="btn-main btn-main_block fancybox">Обратный звонок</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="menu-overlay"></div>
+
+		<section class="billbord">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-8">
+						<h1 class="title-big">Комплексные обеды <br><span>с бесплатной</span> доставкой <div class="tag-title"><span>от</span> <strong>275</strong> ₽</div></h1>
+						<ul class="list-page">
+							<li>Готовим только из свежих продуктов и <strong>экономим ваше время</strong> на работе, мероприятиях, дома, в праздничные дни</li>
+							<li>Принимаем <strong>корпоративные заказы</strong> с оформлением договора и оплатой на расчетный счет</li>
+						</ul>
+						<a href="#" class="btn-main">Смотреть меню</a>
+					</div>
+					<div class="col-lg-4">
+						<div class="image-billbord">
+							<img src="img/billbord.png" alt="alt">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row row_advantages">
+					<div class="col-advantage">
+						<div class="item-advantage">
+							<div class="item-advantage__icon">
+								<img src="img/ic_avd1.svg" alt="alt">
+							</div>
+							<p>Готовим <br>в день заказа</p>
+						</div>
+					</div>
+					<div class="col-advantage">
+						<div class="item-advantage">
+							<div class="item-advantage__icon">
+								<img src="img/ic_avd2.svg" alt="alt">
+							</div>
+							<p>Бесплатная доставка даже одной порции</p>
+						</div>
+					</div>
+					<div class="col-advantage">
+						<div class="item-advantage">
+							<div class="item-advantage__icon">
+								<img src="img/ic_avd3.svg" alt="alt">
+							</div>
+							<p>Надёжная упаковка и приборы в комплекте</p>
+						</div>
+					</div>
+					<div class="col-advantage">
+						<div class="item-advantage">
+							<div class="item-advantage__icon">
+								<img src="img/ic_avd4.svg" alt="alt">
+							</div>
+							<p>При заказе 5 порций - шестая в подарок </p>
+						</div>
+					</div>
+					<div class="col-advantage">
+						<div class="item-advantage">
+							<div class="item-advantage__icon">
+								<img src="img/ic_avd5.svg" alt="alt">
+							</div>
+							<p>При заказе 3-х порций подарок</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="catalog">
+			<div class="container">
+				<div class="head-section">
+					<h2 class="title-section"><span>М</span>еню на неделю</h2>
+					<a href="#" class="btn-main btn-main_simple">Смотреть все</a>
+				</div>
+				<ul class="slider-catalog">
+					<li>
+						<div class="row row_main">
+							<div class="col-lg-4 col-6">
+								<a href="#" class="item-catalog">
+									<div class="item-catalog__image">
+										<img src="img/catalog1.png" alt="alt">
+									</div>
+									<span class="item-catalog__title">Суп чечевичный</span>
+									<span class="item-catalog__descr">Порция: 350 г.</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-6">
+								<a href="#" class="item-catalog">
+									<div class="item-catalog__image">
+										<img src="img/catalog2.png" alt="alt">
+									</div>
+									<span class="item-catalog__title">Бифштекс на пару</span>
+									<span class="item-catalog__descr">Порция: 150 г.</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-6">
+								<div class="item-catalog item-catalog_info">
+									<div class="head-catalog">
+										<div class="head-catalog__value">04 <span>марта</span></div>
+										<div class="head-catalog__info">
+											<div class="head-catalog__title">Понедельник</div>
+											<div class="head-catalog__time">
+												<p>Приём заказа: <strong>7:00 — 11:00</strong></p>
+												<p>Доставка: <strong>11:00 — 14:00</strong></p>
+											</div>
+										</div>
+									</div>
+									<a href="#" class="btn-main">Заказать обед</a>
+								</div>
+							</div>
+							<div class="col-lg-4 col-6">
+								<a href="#" class="item-catalog">
+									<div class="item-catalog__image">
+										<img src="img/catalog3.png" alt="alt">
+									</div>
+									<span class="item-catalog__title">Картофельное пюре</span>
+									<span class="item-catalog__descr">Порция: 150 г.</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-6">
+								<a href="#" class="item-catalog">
+									<div class="item-catalog__image">
+										<img src="img/catalog4.png" alt="alt">
+									</div>
+									<span class="item-catalog__title">Квашеная капуста</span>
+									<span class="item-catalog__descr">Порция: 250 г.</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-6">
+								<a href="#" class="item-catalog">
+									<div class="item-catalog__image">
+										<img src="img/catalog5.png" alt="alt">
+									</div>
+									<span class="item-catalog__title">Хлеб белый, серый</span>
+									<span class="item-catalog__descr">Порция: 4 кусочка</span>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row row_main">
+							<div class="col-lg-4 col-6">
+								<a href="#" class="item-catalog">
+									<span class="item-catalog__image">
+										<img src="img/catalog6.png" alt="alt">
+									</span>
+									<span class="item-catalog__title">Борщ «Боярынь» 	с фасолью и сметаной</span>
+									<span class="item-catalog__descr">Порция: 350 г.</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-6">
+								<a href="#" class="item-catalog">
+									<span class="item-catalog__image">
+										<img src="img/catalog7.png" alt="alt">
+									</span>
+									<span class="item-catalog__title">«Мимино» Кубанские Бедрышки с черносливом</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-6">
+								<div class="item-catalog item-catalog_info">
+									<div class="head-catalog">
+										<div class="head-catalog__value">05 <span>марта</span></div>
+										<div class="head-catalog__info">
+											<div class="head-catalog__title">Вторник</div>
+											<div class="head-catalog__time">
+												<p>Приём заказа: <strong>7:00 — 11:00</strong></p>
+												<p>Доставка: <strong>11:00 — 14:00</strong></p>
+											</div>
+										</div>
+									</div>
+									<a href="#" class="btn-main">Заказать на завтра</a>
+								</div>
+							</div>
+							<div class="col-lg-4 col-6">
+								<a href="#" class="item-catalog">
+									<span class="item-catalog__image">
+										<img src="img/catalog8.png" alt="alt">
+									</span>
+									<span class="item-catalog__title">Спиральки отварные</span>
+									<span class="item-catalog__descr">Порция: 150 г.</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-6">
+								<a href="#" class="item-catalog">
+									<span class="item-catalog__image">
+										<img src="img/catalog9.png" alt="alt">
+									</span>
+									<span class="item-catalog__title">Салат Оливье</span>
+									<span class="item-catalog__descr">Порция: 250 г.</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-6">
+								<a href="#" class="item-catalog">
+									<span class="item-catalog__image">
+										<img src="img/catalog10.png" alt="alt">
+									</span>
+									<span class="item-catalog__title">Хлеб белый, серый</span>
+									<span class="item-catalog__descr">Порция: 4 кусочка</span>
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row row_main">
+							<div class="col-lg-4 col-6">
+								<a href="#" class="item-catalog">
+									<span class="item-catalog__image">
+										<img src="img/catalog1.png" alt="alt">
+									</span>
+									<span class="item-catalog__title">Суп чечевичный</span>
+									<span class="item-catalog__descr">Порция: 350 г.</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-6">
+								<a href="#" class="item-catalog">
+									<span class="item-catalog__image">
+										<img src="img/catalog2.png" alt="alt">
+									</span>
+									<span class="item-catalog__title">Бифштекс на пару</span>
+									<span class="item-catalog__descr">Порция: 150 г.</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-6">
+								<div class="item-catalog item-catalog_info">
+									<div class="head-catalog">
+										<div class="head-catalog__value">04 <span>марта</span></div>
+										<div class="head-catalog__info">
+											<div class="head-catalog__title">Понедельник</div>
+											<div class="head-catalog__time">
+												<p>Приём заказа: <strong>7:00 — 11:00</strong></p>
+												<p>Доставка: <strong>11:00 — 14:00</strong></p>
+											</div>
+										</div>
+									</div>
+									<a href="#" class="btn-main">Заказать обед</a>
+								</div>
+							</div>
+							<div class="col-lg-4 col-6">
+								<a href="#" class="item-catalog">
+									<span class="item-catalog__image">
+										<img src="img/catalog3.png" alt="alt">
+									</span>
+									<span class="item-catalog__title">Картофельное пюре</span>
+									<span class="item-catalog__descr">Порция: 150 г.</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-6">
+								<a href="#" class="item-catalog">
+									<span class="item-catalog__image">
+										<img src="img/catalog4.png" alt="alt">
+									</span>
+									<span class="item-catalog__title">Квашеная капуста</span>
+									<span class="item-catalog__descr">Порция: 250 г.</span>
+								</a>
+							</div>
+							<div class="col-lg-4 col-6">
+								<a href="#" class="item-catalog">
+									<span class="item-catalog__image">
+										<img src="img/catalog5.png" alt="alt">
+									</span>
+									<span class="item-catalog__title">Хлеб белый, серый</span>
+									<span class="item-catalog__descr">Порция: 4 кусочка</span>
+								</a>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="categories">
+			<div class="container">
+				<h2 class="title-section"><span>М</span>ы предлагаем</h2>
+				<div class="row">
+					<div class="col-lg-4 col-md-6">
+						<a href="#" class="item-category item-category_main">
+							<span class="item-category__title">Комплексные обеды</span>
+							<span class="item-category__descr">
+								<p>Стандарт - <strong>275 ₽</strong></p>
+								<p>Мега порция - <strong>325 ₽</strong></p>
+							</span>
+							<span class="item-category__image">
+								<img src="img/category1.png" alt="alt">
+							</span>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<a href="#" class="item-category item-category_second">
+							<span class="item-category__title">Меню для корпоративных клиентов</span>
+							<span class="item-category__descr">Завтрак, обед и ужин - <strong>550 ₽</strong></span>
+							<span class="item-category__image">
+								<img src="img/category2.png" alt="alt">
+							</span>
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-12">
+						<div class="row">
+							<div class="col-lg-12 col-md-6">
+								<a href="#" class="item-category item-category_min">
+									<span class="item-category__title">Вегетарианское меню</span>
+									<span class="item-category__descr">Одна порция - <strong>275 ₽</strong></span>
+									<span class="item-category__image">
+										<img src="img/category3.png" alt="alt">
+									</span>
+								</a>
+							</div>
+							<div class="col-lg-12 col-md-6">
+								<a href="#" class="item-category item-category_min">
+									<span class="item-category__title">Напитки <br>и десерты</span>
+									<span class="item-category__image">
+										<img src="img/category4.png" alt="alt">
+									</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="cooperation">
+			<div class="container">
+				<div class="cooperation-block">
+					<div class="row">
+						<div class="col-lg-7">
+							<h2 class="title-section"><span>Для</span> предприятий <br>и корпоративных клиентов</h2>
+							<ul class="list-page">
+								<li>
+									<p>Комплексное 3-х разовое питание (завтрак, обед и ужин)</p>
+									<div class="price-page">550 <span>₽</span></div>
+								</li>
+								<li>
+									<p>Обеспечиваем поставками питьевой воды и предоставляем в бесплатное пользование кулеры и помпы</p>
+									<div class="price-page">150 <span>₽</span> <div class="price-page__descr">19,8 литров</div></div>
+								</li>
+							</ul>
+							<div class="info-cooperation">
+								<div class="info-cooperation__inner">
+									<div class="info-cooperation__title">На время сотрудничества</div>
+									<p>предоставляем микроволновки и электрочайники в бесплатное пользование.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="form-page">
+								<div class="title-form">Для сотрудничества оставьте заявку</div>
+								<form>
+									<div class="item-form">
+										<input type="text" placeholder="Ваше имя" required="required">
+									</div>
+									<div class="item-form">
+										<input type="tel" class="input-phone">
+									</div>
+									<div class="item-form">
+										<input type="email" placeholder="E-mail" required="required">
+									</div>
+									<div class="btn-main">
+										<input type="submit" value="Оставить заявку">
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" required="required" checked="checked" />
+											<span>Отправляя заявку, Вы соглашаетесь на обработку персональных данных.</span>
+										</label>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="clients">
+			<div class="container">
+				<div class="head-section">
+					<div class="head-section__left">
+						<h2 class="title-section"><span>У</span> нас заказывают</h2>
+						<div class="descr-section">Более 5 лет 6 дней в неделю мы доставляем около 2000 порций в офисы, школы, в больницы и надом по всему Крыму. Среди наших постоянных клиентов:</div>
+					</div>
+					<a href="#" class="btn-main btn-main_simple">Смотреть все</a>
+				</div>
+				<ul class="slider-clients">
+					<li>
+						<div class="item-client">
+							<div class="item-client__image">
+								<img src="img/client1.svg" alt="alt">
+							</div>
+							<div class="item-client__title">Совет Министров РК</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-client">
+							<div class="item-client__image">
+								<img src="img/client2.png" alt="alt">
+							</div>
+							<div class="item-client__title">Администрация города</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-client">
+							<div class="item-client__image">
+								<img src="img/client3.svg" alt="alt">
+							</div>
+							<div class="item-client__title">Аэропорт</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-client">
+							<div class="item-client__image">
+								<img src="img/client4.png" alt="alt">
+							</div>
+							<div class="item-client__title">Департамент труда и соцзащиты</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-client">
+							<div class="item-client__image">
+								<img src="img/client1.svg" alt="alt">
+							</div>
+							<div class="item-client__title">Совет Министров РК</div>
+						</div>
+					</li>
+					<li>
+						<div class="item-client">
+							<div class="item-client__image">
+								<img src="img/client2.png" alt="alt">
+							</div>
+							<div class="item-client__title">Администрация города</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="reviews">
+			<div class="container">
+				<div class="reviews-block">
+					<div class="row">
+						<div class="col-lg-3">
+							<div class="reviews-block__image">
+								<img src="img/phone_reviews.png" alt="alt">
+							</div>
+						</div>
+						<div class="col-lg-9">
+							<div class="head-section">
+								<h2 class="title-section"><span>О</span>тзывы <br>наших клиентов</h2>
+								<a href="#" class="btn-main">Оставить отзыв</a>
+							</div>
+							<ul class="slider-reviews">
+								<li>
+									<div class="item-review">
+										<div class="item-review__title">Анна  Мешкова</div>
+										<div class="item-review__date">11.07.2021</div>
+										<p>Спасибо большое за обед. Вкусно, съели всё, а что не съели забрали домой)</p>
+									</div>
+								</li>
+								<li>
+									<div class="item-review">
+										<img src="img/review1.jpg" alt="alt">
+									</div>
+								</li>
+								<li>
+									<div class="item-review">
+										<div class="item-review__title">Анна  Мешкова</div>
+										<div class="item-review__date">11.07.2021</div>
+										<p>Спасибо большое за обед. Вкусно, съели всё, а что не съели забрали домой)</p>
+									</div>
+								</li>
+								<li>
+									<div class="item-review">
+										<img src="img/review1.jpg" alt="alt">
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="steps">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="steps-main">
+							<h2 class="title-section"><span>К</span>ак мы работаем?</h2>
+							<ul class="list-page">
+								<li>Получаем вашу заявку <br>по телефону: <br><a href="tel:+79780232737" class="phone-main">+7 (978) 023 27 37</a></li>
+								<li>
+									<span>В мессенджерах</span>
+									<ul class="list-socials">
+										<li><a href="#" target="_blank"><img src="img/vk.svg" alt="alt"></a></li>
+										<li><a href="#" target="_blank"><img src="img/tg.svg" alt="alt"></a></li>
+										<li><a href="#" target="_blank"><img src="img/wp.svg" alt="alt"></a></li>
+									</ul>
+								</li>
+								<li>или через форму на сайте</li>
+							</ul>
+							<a href="#" class="btn-main">Оставить заявку</a>
+						</div>
+					</div>
+					<div class="col-lg-7">
+						<div class="row">
+							<div class="col-12">
+								<div class="item-step">
+									<div class="item-step__number">01</div>
+									<div class="item-step__content">
+										<div class="item-step__title">Сборка</div>
+										<p>Надёжно комплектуем ваш обед и передаём в службу доставки </p>
+									</div>
+									<div class="item-step__image">
+										<img src="img/step1.png" alt="alt">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="item-step">
+									<div class="item-step__number">02</div>
+									<div class="item-step__content">
+										<div class="item-step__title">Доставка</div>
+										<p>Бесплатно и бережно доставляем заказ в оговоренные сроки</p>
+									</div>
+									<div class="item-step__image">
+										<img src="img/step2.png" alt="alt">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="item-step">
+									<div class="item-step__number">03</div>
+									<div class="item-step__content">
+										<div class="item-step__title">Оплата</div>
+										<p>Передаём заказ вам в руки и принимаем оплату наличными или по карте</p>
+									</div>
+									<div class="item-step__image">
+										<img src="img/step3.png" alt="alt">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4">
+						<a href="#" class="logo">
+							<img src="img/logo2.svg" alt="alt">
+						</a>
+						<ul class="footer__nav">
+							<li><a href="#">Меню</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Оплата и доставка</a></li>
+							<li><a href="#">Документы</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+						<div class="socials-block">
+							<p>Мы в соцсетях <br>и мессенджерах:</p>
+							<ul class="list-socials">
+								<li><a href="#" target="_blank"><img src="img/vk.svg" alt="alt"></a></li>
+								<li><a href="#" target="_blank"><img src="img/tg.svg" alt="alt"></a></li>
+								<li><a href="#" target="_blank"><img src="img/wp.svg" alt="alt"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<div class="footer__head">
+							<a href="tel:+79780232737" class="footer__phone">+7 (978) 023 27 37</a>
+							<a href="#" class="btn-main">Обратный звонок</a>
+						</div>
+						<div class="requisites">
+							<div class="requisites__title">ИП Козлюк Станислав Олегович</div>
+							<p>ИНН: 910223212793, ОГРНИП: 316910200061100,  Банк: РНКБ (ПАО), </p>
+							<p>Бик: 043510607,Р/С: 40802810541650100963,  К/с: 30101810335100000607</p>
+						</div>
+						<div class="row">
+							<div class="col-md-5">
+								<div class="footer__title">Корпоративным клиентам:</div>
+								<a href="tel:79782278639" class="phone-btn">7 (978) 227 86 39</a>
+							</div>
+							<div class="col-md-7">
+								<div class="footer__location">
+									<div class="footer__title">Адрес:</div>
+									<p>295047 Крым Респ., г. Симферополь ул. Героев Сталинграда дом 19 кв 70</p>
+								</div>
+							</div>
+						</div>
+						<div class="footer-bottom">
+							<div class="footer-bottom__left">
+								<a href="#">Политика кониденциальности</a>
+								<div class="copyright">Крымланч © Copyright 2024</div>
+							</div>
+							<div class="create">Сделано в <br><a href="#"><img src="img/create.svg" alt="alt"></a></div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="image-footer">
+							<img src="img/img_footer.png" alt="alt">
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+	</div>
+	
+	<div id="callback" class="modal-block">
+		<div class="modal-wrap">
+			<div class="title-form">Заказать обратный звонок</div>
+			<form>
+				<div class="item-form">
+					<input type="text" placeholder="Ваше имя" required="required">
+				</div>
+				<div class="item-form">
+					<input type="tel" class="input-phone">
+				</div>
+				<div class="btn-main">
+					<input type="submit" value="Оставить заявку">
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" required="required" checked="checked" />
+						<span>Отправляя заявку, Вы соглашаетесь на обработку персональных данных.</span>
+					</label>
+				</div>
+			</form>			
+		</div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	<script src="libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+	<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
+	<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+	<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+	<script src="libs/intl-tel-input-master/build/js/intlTelInput-jquery.min.js"></script>
+	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+	<script src="js/common.js?ver=1.1"></script>
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
