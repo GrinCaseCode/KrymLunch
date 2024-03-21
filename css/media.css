@@ -1089,6 +1089,12 @@
     .sandwich {
         margin-left: 25px;
     }
+    .menu > li > a::after {
+        transition: all 0.3s;
+    }
+    .menu > li.active > a::after {
+        transform: rotate(180deg);
+    }
 }
 
 /* Small Devices, Tablets */
