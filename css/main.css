@@ -2250,11 +2250,19 @@ input[type=number]
 	flex-direction: column;
 	align-items: flex-start;
 	transition: all 0.5s;
+	border: 2px solid transparent;
+}
+.item-news:hover .item-news__image img {
+	transform: scale(1.1);
+}
+.item-news:hover {
+	border: 2px solid #e20707;
 }
 .item-news__image {
 	height: 333px;
-	border-radius: 16px 16px 0 0;
+	border-radius: 14px 14px 0 0;
 	width: 100%;
+	overflow: hidden;
 	display: block;
 }
 .item-news__image img {
@@ -2262,7 +2270,8 @@ input[type=number]
 	height: 100%;
 	object-fit: cover;
 	font-family: 'object-fit: cover;';
-	border-radius: 16px 16px 0 0;
+	border-radius: 14px 14px 0 0;
+	transition: all 0.7s;
 }
 .item-news__content {
 	padding: 32px;
