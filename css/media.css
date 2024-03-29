@@ -1275,6 +1275,9 @@
     .item-news__image {
         height: 205px;
     }
+    .item-news__date {
+        font-size: 14px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -1535,6 +1538,9 @@
     }
     .item-news__image {
         height: 240px;
+    }
+    .item-news__date {
+        font-size: 12px;
     }
 }
 
