@@ -1278,6 +1278,11 @@
     .item-news__date {
         font-size: 14px;
     }
+    .contacts-block .list-socials a {
+        width: 43px;
+        height: 43px;
+        padding: 9px;
+    }
 }
 
 /* Medium Devices, Desktops */
