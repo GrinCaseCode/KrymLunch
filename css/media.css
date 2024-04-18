@@ -760,6 +760,7 @@
     .sidebar-news {
         top: 120px;
     }
+    .clients,
     .page-article,
     .page-catalog,
     .page-corporate ~ .catalog,
@@ -1634,6 +1635,7 @@
         padding-top: 25px;
         top: 0;
     }
+    .clients,
     .page-article,
     .page-catalog,
     .page-corporate ~ .catalog,

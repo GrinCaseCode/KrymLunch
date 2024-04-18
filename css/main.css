@@ -1805,21 +1805,6 @@ input[type=number]
 	position: relative;
 	z-index: 1;
 }
-.clients::after {
-    position: absolute;
-    display: block;
-    content: " ";
-    top: 100%;
-	margin-top: -470px;
-    left: 0;
-    width: 100%;
-    height: 1017px;
-    background-image: url(../img/bg_clients.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    pointer-events: none;
-	z-index: -1;
-}
 .steps::after {
 	display: none;
 }
@@ -2482,6 +2467,7 @@ input[type=number]
 .footer {
 	overflow: hidden;
 }
+.clients,
 .page-article,
 .page-catalog,
 .page-corporate ~ .catalog,
@@ -2492,6 +2478,7 @@ input[type=number]
     background-repeat: no-repeat;
     background-position: center bottom -450px;
 }
+.clients::after,
 .page-catalog::after,
 .page-corporate ~ .catalog::after,
 .page-lunches ~ .catalog::after,
