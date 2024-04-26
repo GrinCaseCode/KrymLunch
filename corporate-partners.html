@@ -20,14 +20,14 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.5" />
-	<link rel="stylesheet" href="css/media.css?ver=1.5" />
+	<link rel="stylesheet" href="css/main.css?ver=1.8" />
+	<link rel="stylesheet" href="css/media.css?ver=1.8" />
 </head>
 <body>
 
 	<div class="wrapper">
 
-		<header class="header">
+		<header class="header fadeInDown wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="1s">
 			<div class="container-fluid">
 				<div class="header__wrap">
 					<div class="header__left">
@@ -138,7 +138,7 @@
 
 		<section class="page-corporate">
 			<div class="container">
-				<ul class="breadcrumbs">
+				<ul class="breadcrumbs fadeIn wow" data-wow-iteration="1" data-wow-duration="1s" data-wow-delay="0.3s">
 					<li><a href="#">Главная</a></li>
 					<li><span>Корпоративным партнерам</span></li>
 				</ul>
@@ -196,339 +196,121 @@
 
 		<section class="catalog">
 			<div class="container">
-				<div class="head-section">
-					<h2 class="title-section fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s"><span>М</span>еню на неделю</h2>
-					<a href="#" class="btn-main btn-main_simple">Смотреть все</a>
+				<div class="head-section fadeIn wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.3s">
+					<h2 class="title-section"><span>М</span>еню на неделю</h2>
 				</div>
-				<ul class="slider-catalog">
-					<li>
-						<div class="row row_main">
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog1.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Суп чечевичный</span>
-									<span class="item-catalog__descr">Порция: 350 г.</span>
-								</span>
+				<div class="row row_main">
+					<div class="col-lg-4 col-6 fadeInLeft wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.6s">
+						<span class="item-catalog">
+							<div class="item-catalog__image">
+								<img src="img/menu_catalog1.jpg" alt="alt">
 							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog2.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Бифштекс на пару</span>
-									<span class="item-catalog__descr">Порция: 150 г.</span>
-								</span>
+							<div class="item-catalog__value">150 / 150 г.</div>
+							<form class="cart" method="post" enctype="multipart/form-data">	
+								<div class="quantity">
+										<div class="quantity-button quantity-down qty_button minus">–</div>
+										<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
+										<div class="quantity-button quantity-up qty_button plus">+</div>	
+								</div>
+								<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
+							</form>
+							<span class="item-catalog__title">Суп чечевичный</span>
+							<span class="item-catalog__descr">Порция: 350 г.</span>
+						</span>
+					</div>
+					<div class="col-lg-4 col-6 fadeInLeft wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.3s">
+						<span class="item-catalog">
+							<div class="item-catalog__image">
+								<img src="img/menu_catalog2.jpg" alt="alt">
 							</div>
-							<div class="col-lg-4 col-6">
-								<div class="item-catalog item-catalog_info">
-									<div class="head-catalog">
-										<div class="head-catalog__value">04 <span>марта</span></div>
-										<div class="head-catalog__info">
-											<div class="head-catalog__title">Понедельник</div>
-											<div class="head-catalog__time">
-												<p>Приём заказа: <strong>7:00 — 11:00</strong></p>
-												<p>Доставка: <strong>11:00 — 14:00</strong></p>
-											</div>
-										</div>
+							<div class="item-catalog__value">2 шт.</div>
+							<form class="cart" method="post" enctype="multipart/form-data">	
+								<div class="quantity">
+										<div class="quantity-button quantity-down qty_button minus">–</div>
+										<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
+										<div class="quantity-button quantity-up qty_button plus">+</div>	
+								</div>
+								<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
+							</form>
+							<span class="item-catalog__title">Бифштекс на пару</span>
+							<span class="item-catalog__descr">Порция: 150 г.</span>
+						</span>
+					</div>
+					<div class="col-lg-4 col-6 fadeInRight wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.6s">
+						<div class="item-catalog item-catalog_info">
+							<div class="head-catalog">
+								<div class="head-catalog__value">04 <span>марта</span></div>
+								<div class="head-catalog__info">
+									<div class="head-catalog__title">Понедельник</div>
+									<div class="head-catalog__time">
+										<p>Приём заказа: <strong>7:00 — 11:00</strong></p>
+										<p>Доставка: <strong>11:00 — 14:00</strong></p>
 									</div>
-									<form class="cart" action="" method="post" enctype="multipart/form-data">                           	
-                                        <button type="submit" name="add-to-cart" value="126" class="btn-main" tabindex="0">В корзину стандартную порцию</button>
-                                    </form>
-									<form class="cart" action="" method="post" enctype="multipart/form-data">                           	
-                                        <button type="submit" name="add-to-cart" value="127" class="btn-main" tabindex="0">В корзину МЕГА порцию</button>
-                                    </form>
 								</div>
 							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog3.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Картофельное пюре</span>
-									<span class="item-catalog__descr">Порция: 150 г.</span>
-								</span>
-							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog4.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Квашеная капуста</span>
-									<span class="item-catalog__descr">Порция: 250 г.</span>
-								</span>
-							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog5.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Хлеб белый, серый</span>
-									<span class="item-catalog__descr">Порция: 4 кусочка</span>
-								</span>
-							</div>
+							<form class="cart" action="" method="post" enctype="multipart/form-data">                           	
+								<button type="submit" name="add-to-cart" value="126" class="btn-main" tabindex="0">В корзину стандартную порцию</button>
+							</form>
+							<form class="cart" action="" method="post" enctype="multipart/form-data">                           	
+								<button type="submit" name="add-to-cart" value="127" class="btn-main" tabindex="0">В корзину МЕГА порцию</button>
+							</form>
 						</div>
-					</li>
-					<li>
-						<div class="row row_main">
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog1.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Суп чечевичный</span>
-									<span class="item-catalog__descr">Порция: 350 г.</span>
-								</span>
+					</div>
+					<div class="col-lg-4 col-6 fadeInLeft wow" data-wow-iteration="1" data-wow-duration="1s" data-wow-delay="0.6s">
+						<span class="item-catalog">
+							<div class="item-catalog__image">
+								<img src="img/menu_catalog3.jpg" alt="alt">
 							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog2.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Бифштекс на пару</span>
-									<span class="item-catalog__descr">Порция: 150 г.</span>
-								</span>
-							</div>
-							<div class="col-lg-4 col-6">
-								<div class="item-catalog item-catalog_info">
-									<div class="head-catalog">
-										<div class="head-catalog__value">04 <span>марта</span></div>
-										<div class="head-catalog__info">
-											<div class="head-catalog__title">Понедельник</div>
-											<div class="head-catalog__time">
-												<p>Приём заказа: <strong>7:00 — 11:00</strong></p>
-												<p>Доставка: <strong>11:00 — 14:00</strong></p>
-											</div>
-										</div>
-									</div>
-									<form class="cart" action="" method="post" enctype="multipart/form-data">                           	
-                                        <button type="submit" name="add-to-cart" value="126" class="btn-main" tabindex="0">В корзину стандартную порцию</button>
-                                    </form>
-									<form class="cart" action="" method="post" enctype="multipart/form-data">                           	
-                                        <button type="submit" name="add-to-cart" value="127" class="btn-main" tabindex="0">В корзину МЕГА порцию</button>
-                                    </form>
+							<div class="item-catalog__value">150 / 150 г.</div>
+							<form class="cart" method="post" enctype="multipart/form-data">	
+								<div class="quantity">
+										<div class="quantity-button quantity-down qty_button minus">–</div>
+										<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
+										<div class="quantity-button quantity-up qty_button plus">+</div>	
 								</div>
+								<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
+							</form>
+							<span class="item-catalog__title">Картофельное пюре</span>
+							<span class="item-catalog__descr">Порция: 150 г.</span>
+						</span>
+					</div>
+					<div class="col-lg-4 col-6 fadeInRight wow" data-wow-iteration="1" data-wow-duration="1s" data-wow-delay="0.3s">
+						<span class="item-catalog">
+							<div class="item-catalog__image">
+								<img src="img/menu_catalog4.jpg" alt="alt">
 							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog3.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Картофельное пюре</span>
-									<span class="item-catalog__descr">Порция: 150 г.</span>
-								</span>
-							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog4.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Квашеная капуста</span>
-									<span class="item-catalog__descr">Порция: 250 г.</span>
-								</span>
-							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog5.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Хлеб белый, серый</span>
-									<span class="item-catalog__descr">Порция: 4 кусочка</span>
-								</span>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="row row_main">
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog1.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Суп чечевичный</span>
-									<span class="item-catalog__descr">Порция: 350 г.</span>
-								</span>
-							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog2.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Бифштекс на пару</span>
-									<span class="item-catalog__descr">Порция: 150 г.</span>
-								</span>
-							</div>
-							<div class="col-lg-4 col-6">
-								<div class="item-catalog item-catalog_info">
-									<div class="head-catalog">
-										<div class="head-catalog__value">04 <span>марта</span></div>
-										<div class="head-catalog__info">
-											<div class="head-catalog__title">Понедельник</div>
-											<div class="head-catalog__time">
-												<p>Приём заказа: <strong>7:00 — 11:00</strong></p>
-												<p>Доставка: <strong>11:00 — 14:00</strong></p>
-											</div>
-										</div>
-									</div>
-									<form class="cart" action="" method="post" enctype="multipart/form-data">                           	
-                                        <button type="submit" name="add-to-cart" value="126" class="btn-main" tabindex="0">В корзину стандартную порцию</button>
-                                    </form>
-									<form class="cart" action="" method="post" enctype="multipart/form-data">                           	
-                                        <button type="submit" name="add-to-cart" value="127" class="btn-main" tabindex="0">В корзину МЕГА порцию</button>
-                                    </form>
+							<div class="item-catalog__value">150 / 150 г.</div>
+							<form class="cart" method="post" enctype="multipart/form-data">	
+								<div class="quantity">
+										<div class="quantity-button quantity-down qty_button minus">–</div>
+										<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
+										<div class="quantity-button quantity-up qty_button plus">+</div>	
 								</div>
+								<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
+							</form>
+							<span class="item-catalog__title">Квашеная капуста</span>
+							<span class="item-catalog__descr">Порция: 250 г.</span>
+						</span>
+					</div>
+					<div class="col-lg-4 col-6 fadeInRight wow" data-wow-iteration="1" data-wow-duration="1s" data-wow-delay="0.6s">
+						<span class="item-catalog">
+							<div class="item-catalog__image">
+								<img src="img/menu_catalog5.jpg" alt="alt">
 							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog3.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Картофельное пюре</span>
-									<span class="item-catalog__descr">Порция: 150 г.</span>
-								</span>
-							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog4.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Квашеная капуста</span>
-									<span class="item-catalog__descr">Порция: 250 г.</span>
-								</span>
-							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog5.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Хлеб белый, серый</span>
-									<span class="item-catalog__descr">Порция: 4 кусочка</span>
-								</span>
-							</div>
-						</div>
-					</li>
-				</ul>
+							<div class="item-catalog__value">2 шт.</div>
+							<form class="cart" method="post" enctype="multipart/form-data">	
+								<div class="quantity">
+										<div class="quantity-button quantity-down qty_button minus">–</div>
+										<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
+										<div class="quantity-button quantity-up qty_button plus">+</div>	
+								</div>
+								<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
+							</form>
+							<span class="item-catalog__title">Хлеб белый, серый</span>
+							<span class="item-catalog__descr">Порция: 4 кусочка</span>
+						</span>
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -635,7 +417,7 @@
 	<script src="libs/animate/animate-css.js"></script>
 	<script src="libs/intl-tel-input-master/build/js/intlTelInput-jquery.min.js"></script>
 	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-	<script src="js/common.js?ver=1.5"></script>
+	<script src="js/common.js?ver=1.8"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>

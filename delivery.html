@@ -20,14 +20,14 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.5" />
-	<link rel="stylesheet" href="css/media.css?ver=1.5" />
+	<link rel="stylesheet" href="css/main.css?ver=1.8" />
+	<link rel="stylesheet" href="css/media.css?ver=1.8" />
 </head>
 <body>
 
 	<div class="wrapper">
 
-		<header class="header">
+		<header class="header fadeInDown wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="1s">
 			<div class="container-fluid">
 				<div class="header__wrap">
 					<div class="header__left">
@@ -138,16 +138,16 @@
 
 		<section class="page-delivery">
 			<div class="container">
-				<ul class="breadcrumbs">
+				<ul class="breadcrumbs fadeIn wow" data-wow-iteration="1" data-wow-duration="1s" data-wow-delay="0.3s">
 					<li><a href="#">Главная</a></li>
 					<li><span>Доставка и оплата</span></li>
 				</ul>
 				<div class="head-section">
-					<div class="head-section__left fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+					<div class="head-section__left fadeInLeft wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.3s">
 						<h1 class="title-section"><span>Д</span>оставка и оплата</h1>
 						<div class="descr-section">Крымланч обеспечивает бесплатную доставку обедов по всему Крыму и за его пределами</div>
 					</div>
-					<div class="time-main">
+					<div class="time-main fadeInRight wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.3s">
 						<div class="time-main__icon">
 							<img src="img/time.svg" alt="alt">
 						</div>
@@ -157,7 +157,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="map"></div>
+				<div id="map" class="fadeInUp wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.3s"></div>
 			</div>
 		</section>
 
@@ -165,7 +165,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-5">
-						<div class="steps-main fadeIn wow" data-wow-iteration="1" data-wow-duration="1.6s" data-wow-delay="0.3s">
+						<div class="steps-main fadeInLeft wow" data-wow-iteration="1" data-wow-duration="1.6s" data-wow-delay="0.3s">
 							<h2 class="title-section"><span>К</span>ак мы работаем?</h2>
 							<ul class="list-page">
 								<li>Получаем вашу заявку <br>по телефону: <br><a href="tel:+79780232737" class="phone-main">+7 (978) 023 27 37</a></li>
@@ -185,7 +185,7 @@
 					<div class="col-lg-7">
 						<div class="row">
 							<div class="col-12">
-								<div class="item-step fadeIn wow" data-wow-iteration="1" data-wow-duration="1.6s" data-wow-delay="0.6s">
+								<div class="item-step fadeInRight wow" data-wow-iteration="1" data-wow-duration="1.6s" data-wow-delay="0.3s">
 									<div class="item-step__number">01</div>
 									<div class="item-step__content">
 										<div class="item-step__title">Сборка</div>
@@ -197,7 +197,7 @@
 								</div>
 							</div>
 							<div class="col-md-6">
-								<div class="item-step fadeIn wow" data-wow-iteration="1" data-wow-duration="1.6s" data-wow-delay="0.9s">
+								<div class="item-step fadeInUp wow" data-wow-iteration="1" data-wow-duration="1.6s" data-wow-delay="0.9s">
 									<div class="item-step__number">02</div>
 									<div class="item-step__content">
 										<div class="item-step__title">Доставка</div>
@@ -209,7 +209,7 @@
 								</div>
 							</div>
 							<div class="col-md-6">
-								<div class="item-step fadeIn wow" data-wow-iteration="1" data-wow-duration="1.6s" data-wow-delay="1.2s">
+								<div class="item-step fadeInUp wow" data-wow-iteration="1" data-wow-duration="1.6s" data-wow-delay="1.2s">
 									<div class="item-step__number">03</div>
 									<div class="item-step__content">
 										<div class="item-step__title">Оплата</div>
@@ -329,7 +329,7 @@
 	<script src="libs/animate/animate-css.js"></script>
 	<script src="libs/intl-tel-input-master/build/js/intlTelInput-jquery.min.js"></script>
 	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-	<script src="js/common.js?ver=1.5"></script>
+	<script src="js/common.js?ver=1.8"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<script>
 		$(document).ready(function() {

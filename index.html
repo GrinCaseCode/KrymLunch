@@ -20,14 +20,14 @@
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?ver=1.6" />
-	<link rel="stylesheet" href="css/media.css?ver=1.6" />
+	<link rel="stylesheet" href="css/main.css?ver=1.8" />
+	<link rel="stylesheet" href="css/media.css?ver=1.8" />
 </head>
 <body>
 
 	<div class="wrapper">
 
-		<header class="header">
+		<header class="header fadeInDown wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="1s">
 			<div class="container-fluid">
 				<div class="header__wrap">
 					<div class="header__left">
@@ -139,23 +139,24 @@
 		<section class="billbord">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-lg-8">
-						<h1 class="title-big fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">Бизнес ланчи  <br><span>с бесплатной</span> доставкой <div class="tag-title"><span>от</span> <strong>275</strong> ₽</div></h1>
-						<ul class="list-page fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+					<div class="col-lg-8 fadeInLeft wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.3s">
+						<h1 class="title-big">Бизнес ланчи  <br><span>с бесплатной</span> доставкой <div class="tag-title"><span>от</span> <strong>275</strong> ₽</div></h1>
+						<ul class="list-page">
 							<li>Готовим только из свежих продуктов и <strong>экономим ваше время</strong> на работе, мероприятиях, дома, в праздничные дни</li>
 							<li>Принимаем <strong>корпоративные заказы</strong> с оформлением договора и оплатой на расчетный счет</li>
 							<li>Принимаем <strong>корпоративные заказы</strong> с оформлением договора и оплатой на расчетный счет</li>
 						</ul>
-						<a href="#" class="btn-main fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">Смотреть меню</a>
+						<a href="#" class="btn-main">Смотреть меню</a>
 					</div>
 					<div class="col-lg-4">
-						<div class="image-billbord">
+						<div class="image-billbord fadeInRight wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.3s">
 							<img src="img/billbord.png" alt="alt">
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="container">
+				<h2 class="title-main fadeInUp wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.6s"><img src="img/ic_title1.svg" alt="alt">Мышлено Повар Ваш</h2>
 				<div class="row row_advantages">
 					<div class="col-advantage">
 						<div class="item-advantage fadeInUp wow" data-wow-iteration="1" data-wow-delay="0.3s">
@@ -203,339 +204,221 @@
 
 		<section class="catalog">
 			<div class="container">
-				<div class="head-section">
-					<h2 class="title-section fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s"><span>М</span>еню на неделю</h2>
-					<a href="#" class="btn-main btn-main_simple">Смотреть все</a>
+				<div class="head-section fadeIn wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.3s">
+					<h2 class="title-section"><span>М</span>еню на неделю</h2>
 				</div>
-				<ul class="slider-catalog">
-					<li>
-						<div class="row row_main">
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog1.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Суп чечевичный</span>
-									<span class="item-catalog__descr">Порция: 350 г.</span>
-								</span>
+				<div class="row row_main">
+					<div class="col-lg-4 col-6 fadeInLeft wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.6s">
+						<span class="item-catalog">
+							<div class="item-catalog__image">
+								<img src="img/menu_catalog1.jpg" alt="alt">
 							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog2.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Бифштекс на пару</span>
-									<span class="item-catalog__descr">Порция: 150 г.</span>
-								</span>
+							<div class="item-catalog__value">150 / 150 г.</div>
+							<form class="cart" method="post" enctype="multipart/form-data">	
+								<div class="quantity">
+										<div class="quantity-button quantity-down qty_button minus">–</div>
+										<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
+										<div class="quantity-button quantity-up qty_button plus">+</div>	
+								</div>
+								<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
+							</form>
+							<span class="item-catalog__title">Суп чечевичный</span>
+							<span class="item-catalog__descr">Порция: 350 г.</span>
+						</span>
+					</div>
+					<div class="col-lg-4 col-6 fadeInLeft wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.3s">
+						<span class="item-catalog">
+							<div class="item-catalog__image">
+								<img src="img/menu_catalog2.jpg" alt="alt">
 							</div>
-							<div class="col-lg-4 col-6">
-								<div class="item-catalog item-catalog_info">
-									<div class="head-catalog">
-										<div class="head-catalog__value">04 <span>марта</span></div>
-										<div class="head-catalog__info">
-											<div class="head-catalog__title">Понедельник</div>
-											<div class="head-catalog__time">
-												<p>Приём заказа: <strong>7:00 — 11:00</strong></p>
-												<p>Доставка: <strong>11:00 — 14:00</strong></p>
-											</div>
-										</div>
+							<div class="item-catalog__value">2 шт.</div>
+							<form class="cart" method="post" enctype="multipart/form-data">	
+								<div class="quantity">
+										<div class="quantity-button quantity-down qty_button minus">–</div>
+										<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
+										<div class="quantity-button quantity-up qty_button plus">+</div>	
+								</div>
+								<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
+							</form>
+							<span class="item-catalog__title">Бифштекс на пару</span>
+							<span class="item-catalog__descr">Порция: 150 г.</span>
+						</span>
+					</div>
+					<div class="col-lg-4 col-6 fadeInRight wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.6s">
+						<div class="item-catalog item-catalog_info">
+							<div class="head-catalog">
+								<div class="head-catalog__value">04 <span>марта</span></div>
+								<div class="head-catalog__info">
+									<div class="head-catalog__title">Понедельник</div>
+									<div class="head-catalog__time">
+										<p>Приём заказа: <strong>7:00 — 11:00</strong></p>
+										<p>Доставка: <strong>11:00 — 14:00</strong></p>
 									</div>
-									<form class="cart" action="" method="post" enctype="multipart/form-data">                           	
-                                        <button type="submit" name="add-to-cart" value="126" class="btn-main" tabindex="0">В корзину стандартную порцию</button>
-                                    </form>
-									<form class="cart" action="" method="post" enctype="multipart/form-data">                           	
-                                        <button type="submit" name="add-to-cart" value="127" class="btn-main" tabindex="0">В корзину МЕГА порцию</button>
-                                    </form>
 								</div>
 							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog3.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Картофельное пюре</span>
-									<span class="item-catalog__descr">Порция: 150 г.</span>
-								</span>
-							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog4.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Квашеная капуста</span>
-									<span class="item-catalog__descr">Порция: 250 г.</span>
-								</span>
-							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog5.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Хлеб белый, серый</span>
-									<span class="item-catalog__descr">Порция: 4 кусочка</span>
-								</span>
-							</div>
+							<form class="cart" action="" method="post" enctype="multipart/form-data">                           	
+								<button type="submit" name="add-to-cart" value="126" class="btn-main" tabindex="0">В корзину стандартную порцию</button>
+							</form>
+							<form class="cart" action="" method="post" enctype="multipart/form-data">                           	
+								<button type="submit" name="add-to-cart" value="127" class="btn-main" tabindex="0">В корзину МЕГА порцию</button>
+							</form>
 						</div>
-					</li>
-					<li>
-						<div class="row row_main">
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog1.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Суп чечевичный</span>
-									<span class="item-catalog__descr">Порция: 350 г.</span>
-								</span>
+					</div>
+					<div class="col-lg-4 col-6 fadeInLeft wow" data-wow-iteration="1" data-wow-duration="1s" data-wow-delay="0.6s">
+						<span class="item-catalog">
+							<div class="item-catalog__image">
+								<img src="img/menu_catalog3.jpg" alt="alt">
 							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog2.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Бифштекс на пару</span>
-									<span class="item-catalog__descr">Порция: 150 г.</span>
-								</span>
-							</div>
-							<div class="col-lg-4 col-6">
-								<div class="item-catalog item-catalog_info">
-									<div class="head-catalog">
-										<div class="head-catalog__value">04 <span>марта</span></div>
-										<div class="head-catalog__info">
-											<div class="head-catalog__title">Понедельник</div>
-											<div class="head-catalog__time">
-												<p>Приём заказа: <strong>7:00 — 11:00</strong></p>
-												<p>Доставка: <strong>11:00 — 14:00</strong></p>
-											</div>
-										</div>
-									</div>
-									<form class="cart" action="" method="post" enctype="multipart/form-data">                           	
-                                        <button type="submit" name="add-to-cart" value="126" class="btn-main" tabindex="0">В корзину стандартную порцию</button>
-                                    </form>
-									<form class="cart" action="" method="post" enctype="multipart/form-data">                           	
-                                        <button type="submit" name="add-to-cart" value="127" class="btn-main" tabindex="0">В корзину МЕГА порцию</button>
-                                    </form>
+							<div class="item-catalog__value">150 / 150 г.</div>
+							<form class="cart" method="post" enctype="multipart/form-data">	
+								<div class="quantity">
+										<div class="quantity-button quantity-down qty_button minus">–</div>
+										<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
+										<div class="quantity-button quantity-up qty_button plus">+</div>	
 								</div>
+								<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
+							</form>
+							<span class="item-catalog__title">Картофельное пюре</span>
+							<span class="item-catalog__descr">Порция: 150 г.</span>
+						</span>
+					</div>
+					<div class="col-lg-4 col-6 fadeInRight wow" data-wow-iteration="1" data-wow-duration="1s" data-wow-delay="0.3s">
+						<span class="item-catalog">
+							<div class="item-catalog__image">
+								<img src="img/menu_catalog4.jpg" alt="alt">
 							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog3.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Картофельное пюре</span>
-									<span class="item-catalog__descr">Порция: 150 г.</span>
-								</span>
-							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog4.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Квашеная капуста</span>
-									<span class="item-catalog__descr">Порция: 250 г.</span>
-								</span>
-							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog5.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Хлеб белый, серый</span>
-									<span class="item-catalog__descr">Порция: 4 кусочка</span>
-								</span>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="row row_main">
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog1.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Суп чечевичный</span>
-									<span class="item-catalog__descr">Порция: 350 г.</span>
-								</span>
-							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog2.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Бифштекс на пару</span>
-									<span class="item-catalog__descr">Порция: 150 г.</span>
-								</span>
-							</div>
-							<div class="col-lg-4 col-6">
-								<div class="item-catalog item-catalog_info">
-									<div class="head-catalog">
-										<div class="head-catalog__value">04 <span>марта</span></div>
-										<div class="head-catalog__info">
-											<div class="head-catalog__title">Понедельник</div>
-											<div class="head-catalog__time">
-												<p>Приём заказа: <strong>7:00 — 11:00</strong></p>
-												<p>Доставка: <strong>11:00 — 14:00</strong></p>
-											</div>
-										</div>
-									</div>
-									<form class="cart" action="" method="post" enctype="multipart/form-data">                           	
-                                        <button type="submit" name="add-to-cart" value="126" class="btn-main" tabindex="0">В корзину стандартную порцию</button>
-                                    </form>
-									<form class="cart" action="" method="post" enctype="multipart/form-data">                           	
-                                        <button type="submit" name="add-to-cart" value="127" class="btn-main" tabindex="0">В корзину МЕГА порцию</button>
-                                    </form>
+							<div class="item-catalog__value">150 / 150 г.</div>
+							<form class="cart" method="post" enctype="multipart/form-data">	
+								<div class="quantity">
+										<div class="quantity-button quantity-down qty_button minus">–</div>
+										<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
+										<div class="quantity-button quantity-up qty_button plus">+</div>	
 								</div>
+								<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
+							</form>
+							<span class="item-catalog__title">Квашеная капуста</span>
+							<span class="item-catalog__descr">Порция: 250 г.</span>
+						</span>
+					</div>
+					<div class="col-lg-4 col-6 fadeInRight wow" data-wow-iteration="1" data-wow-duration="1s" data-wow-delay="0.6s">
+						<span class="item-catalog">
+							<div class="item-catalog__image">
+								<img src="img/menu_catalog5.jpg" alt="alt">
 							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog3.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Картофельное пюре</span>
-									<span class="item-catalog__descr">Порция: 150 г.</span>
-								</span>
+							<div class="item-catalog__value">2 шт.</div>
+							<form class="cart" method="post" enctype="multipart/form-data">	
+								<div class="quantity">
+										<div class="quantity-button quantity-down qty_button minus">–</div>
+										<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
+										<div class="quantity-button quantity-up qty_button plus">+</div>	
+								</div>
+								<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
+							</form>
+							<span class="item-catalog__title">Хлеб белый, серый</span>
+							<span class="item-catalog__descr">Порция: 4 кусочка</span>
+						</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="catalog">
+			<div class="container">
+				<div class="head-section fadeIn wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.3s">
+					<h2 class="title-section"><span>Д</span>ополнительное меню</h2>
+				</div>
+				<div class="row row_main">
+					<div class="col-lg-4 col-6 fadeInLeft wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.6s">
+						<span class="item-catalog">
+							<div class="item-catalog__image">
+								<img src="img/dop_menu1.jpg" alt="alt">
 							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog4.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Квашеная капуста</span>
-									<span class="item-catalog__descr">Порция: 250 г.</span>
-								</span>
+							<div class="item-catalog__value">2 шт.</div>
+							<form class="cart" method="post" enctype="multipart/form-data">	
+								<div class="quantity">
+										<div class="quantity-button quantity-down qty_button minus">–</div>
+										<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
+										<div class="quantity-button quantity-up qty_button plus">+</div>	
+								</div>
+								<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
+							</form>
+							<span class="item-catalog__title">Блинчики с мясом</span>
+							<span class="item-catalog__descr">Стоимость: <strong>75 ₽</strong></span>
+						</span>
+					</div>
+					<div class="col-lg-4 col-6 fadeInLeft wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.3s">
+						<span class="item-catalog">
+							<div class="item-catalog__image">
+								<img src="img/dop_menu2.jpg" alt="alt">
 							</div>
-							<div class="col-lg-4 col-6">
-								<span class="item-catalog">
-									<div class="item-catalog__image">
-										<img src="img/catalog5.png" alt="alt">
-									</div>
-									<form class="cart" method="post" enctype="multipart/form-data">	
-										<div class="quantity">
-												<div class="quantity-button quantity-down qty_button minus">–</div>
-												<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
-												<div class="quantity-button quantity-up qty_button plus">+</div>	
-										</div>
-										<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
-									</form>
-									<span class="item-catalog__title">Хлеб белый, серый</span>
-									<span class="item-catalog__descr">Порция: 4 кусочка</span>
-								</span>
+							<div class="item-catalog__value">2 шт.</div>
+							<form class="cart" method="post" enctype="multipart/form-data">	
+								<div class="quantity">
+										<div class="quantity-button quantity-down qty_button minus">–</div>
+										<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
+										<div class="quantity-button quantity-up qty_button plus">+</div>	
+								</div>
+								<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
+							</form>
+							<span class="item-catalog__title">Блинчики с ветчиной</span>
+							<span class="item-catalog__descr">Стоимость: <strong>75 ₽</strong></span>
+						</span>
+					</div>
+					<div class="col-lg-4 col-6 fadeInRight wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.6s">
+						<span class="item-catalog">
+							<div class="item-catalog__image">
+								<img src="img/dop_menu3.jpg" alt="alt">
 							</div>
-						</div>
-					</li>
-				</ul>
+							<div class="item-catalog__value">2 шт.</div>
+							<form class="cart" method="post" enctype="multipart/form-data">	
+								<div class="quantity">
+										<div class="quantity-button quantity-down qty_button minus">–</div>
+										<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
+										<div class="quantity-button quantity-up qty_button plus">+</div>	
+								</div>
+								<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
+							</form>
+							<span class="item-catalog__title">Блинчики с грибами</span>
+							<span class="item-catalog__descr">Стоимость: <strong>75 ₽</strong></span>
+						</span>
+					</div>
+					<div class="col-lg-6 col-6 fadeInLeft wow" data-wow-iteration="1" data-wow-duration="1s" data-wow-delay="0.6s">
+						<span class="item-catalog">
+							<div class="item-catalog__image">
+								<img src="img/dop_menu4.jpg" alt="alt">
+							</div>
+							<div class="item-catalog__value">250 г.</div>
+							<form class="cart" method="post" enctype="multipart/form-data">	
+								<div class="quantity">
+										<div class="quantity-button quantity-down qty_button minus">–</div>
+										<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
+										<div class="quantity-button quantity-up qty_button plus">+</div>	
+								</div>
+								<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
+							</form>
+							<span class="item-catalog__title">Вареники с картофелем</span>
+							<span class="item-catalog__descr">Стоимость: <strong>175 ₽</strong></span>
+						</span>
+					</div>
+					<div class="col-lg-6 col-6 fadeInRight wow" data-wow-iteration="1" data-wow-duration="1s" data-wow-delay="0.3s">
+						<span class="item-catalog">
+							<div class="item-catalog__image">
+								<img src="img/dop_menu5.jpg" alt="alt">
+							</div>
+							<div class="item-catalog__value">250 г.</div>
+							<form class="cart" method="post" enctype="multipart/form-data">	
+								<div class="quantity">
+										<div class="quantity-button quantity-down qty_button minus">–</div>
+										<input type="number" class="input-text qty text" step="1" min="1" max="100" name="quantity" value="1" size="4" placeholder="" inputmode="numeric" tabindex="0">
+										<div class="quantity-button quantity-up qty_button plus">+</div>	
+								</div>
+								<button type="submit" name="add-to-cart" value="100" class="btn-main" tabindex="0">В корзину</button>
+							</form>
+							<span class="item-catalog__title">Пельмени куриные</span>
+							<span class="item-catalog__descr">Стоимость: <strong>225 ₽</strong></span>
+						</span>
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -543,7 +426,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-5">
-						<div class="steps-main fadeIn wow" data-wow-iteration="1" data-wow-duration="1.6s" data-wow-delay="0.3s">
+						<div class="steps-main fadeInLeft wow" data-wow-iteration="1" data-wow-duration="1.6s" data-wow-delay="0.3s">
 							<h2 class="title-section"><span>К</span>ак мы работаем?</h2>
 							<ul class="list-page">
 								<li>Получаем вашу заявку <br>по телефону: <br><a href="tel:+79780232737" class="phone-main">+7 (978) 023 27 37</a></li>
@@ -563,7 +446,7 @@
 					<div class="col-lg-7">
 						<div class="row">
 							<div class="col-12">
-								<div class="item-step fadeIn wow" data-wow-iteration="1" data-wow-duration="1.6s" data-wow-delay="0.6s">
+								<div class="item-step fadeInRight wow" data-wow-iteration="1" data-wow-duration="1.6s" data-wow-delay="0.3s">
 									<div class="item-step__number">01</div>
 									<div class="item-step__content">
 										<div class="item-step__title">Сборка</div>
@@ -575,7 +458,7 @@
 								</div>
 							</div>
 							<div class="col-md-6">
-								<div class="item-step fadeIn wow" data-wow-iteration="1" data-wow-duration="1.6s" data-wow-delay="0.9s">
+								<div class="item-step fadeInUp wow" data-wow-iteration="1" data-wow-duration="1.6s" data-wow-delay="0.9s">
 									<div class="item-step__number">02</div>
 									<div class="item-step__content">
 										<div class="item-step__title">Доставка</div>
@@ -587,7 +470,7 @@
 								</div>
 							</div>
 							<div class="col-md-6">
-								<div class="item-step fadeIn wow" data-wow-iteration="1" data-wow-duration="1.6s" data-wow-delay="1.2s">
+								<div class="item-step fadeInUp wow" data-wow-iteration="1" data-wow-duration="1.6s" data-wow-delay="1.2s">
 									<div class="item-step__number">03</div>
 									<div class="item-step__content">
 										<div class="item-step__title">Оплата</div>
@@ -606,11 +489,11 @@
 
 		<section class="categories">
 			<div class="container">
-				<h2 class="title-section fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s"><span>М</span>ы предлагаем</h2>
+				<h2 class="title-section fadeIn wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.3s"><span>М</span>ы предлагаем</h2>
 				<div class="row">
 					<div class="col-lg-4 col-md-6">
-						<a href="#" class="item-category item-category_main fadeIn wow" data-wow-iteration="1" data-wow-duration="1.6s" data-wow-delay="0.3s">
-							<span class="item-category__title">Бизнес ланчи</span>
+						<a href="#" class="item-category item-category_main fadeInLeft wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.3s">
+							<span class="item-category__title">Бизнес Ланчи с бесплатной доставкой</span>
 							<span class="item-category__descr">
 								<p>Стандарт - <strong>275 ₽</strong></p>
 								<p>Мега порция - <strong>325 ₽</strong></p>
@@ -621,30 +504,50 @@
 						</a>
 					</div>
 					<div class="col-lg-4 col-md-6">
-						<a href="#" class="item-category item-category_second fadeIn wow" data-wow-iteration="1" data-wow-duration="1.6s" data-wow-delay="0.6s">
-							<span class="item-category__title">Меню для корпоративных клиентов</span>
+						<a href="#" class="item-category item-category_second fadeInUp wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="0.7s">
+							<span class="item-category__title">Корпоративным партнерам</span>
 							<span class="item-category__descr">Завтрак, обед и ужин - <strong>550 ₽</strong></span>
-							<span class="item-category__image">
-								<img src="img/category2.png" alt="alt">
-							</span>
+							<div class="wrap-images">
+								<span class="i-cat i-cat_1">
+									<img src="img/i_cat1.png" alt="alt">
+								</span>
+								<span class="i-cat i-cat_2">
+									<img src="img/i_cat2.png" alt="alt">
+								</span>
+								<span class="i-cat i-cat_3">
+									<img src="img/i_cat3.png" alt="alt">
+								</span>
+								<span class="i-cat i-cat_4">
+									<img src="img/i_cat4.png" alt="alt">
+								</span>
+							</div>
 						</a>
 					</div>
 					<div class="col-lg-4 col-md-12">
 						<div class="row">
 							<div class="col-lg-12 col-md-6">
-								<a href="#" class="item-category item-category_min fadeIn wow" data-wow-iteration="1" data-wow-duration="1.6s" data-wow-delay="0.9s">
+								<a href="#" class="item-category item-category_min fadeInRight wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="1s">
 									<span class="item-category__title">Вегетарианское меню</span>
 									<span class="item-category__descr">Одна порция - <strong>275 ₽</strong></span>
-									<span class="item-category__image">
-										<img src="img/category3.png" alt="alt">
+									<span class="i-cat i-cat_5">
+										<img src="img/i_cat5.png" alt="alt">
+									</span>
+									<span class="i-cat i-cat_6">
+										<img src="img/i_cat6.png" alt="alt">
 									</span>
 								</a>
 							</div>
 							<div class="col-lg-12 col-md-6">
-								<a href="#" class="item-category item-category_min fadeIn wow" data-wow-iteration="1" data-wow-duration="1.6s" data-wow-delay="1.2s">
+								<a href="#" class="item-category item-category_min fadeInRight wow" data-wow-iteration="1" data-wow-duration="2s" data-wow-delay="1.5s">
 									<span class="item-category__title">Напитки <br>и десерты</span>
-									<span class="item-category__image">
-										<img src="img/category4.png" alt="alt">
+									<span class="i-cat i-cat_7">
+										<img src="img/i_cat7.png" alt="alt">
+									</span>
+									<span class="i-cat i-cat_8">
+										<img src="img/i_cat8.png" alt="alt">
+									</span>
+									<span class="i-cat i-cat_9">
+										<img src="img/i_cat9.png" alt="alt">
 									</span>
 								</a>
 							</div>
@@ -712,7 +615,6 @@
 				<div class="head-section">
 					<div class="head-section__left fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
 						<h2 class="title-section"><span>У</span> нас заказывают</h2>
-						<div class="descr-section">Более 5 лет 6 дней в неделю мы доставляем около 2000 порций в офисы, школы, в больницы и надом по всему Крыму. Среди наших постоянных клиентов:</div>
 					</div>
 				</div>
 				<div class="row row_main">
@@ -815,6 +717,20 @@
 								<img src="img/client12.png" alt="alt">
 							</div>
 							<div class="item-client__title">Детский клуб развития «Витамин»</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6">
+						<div class="item-client fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+							<div class="item-client__image">
+								<img src="img/client13.svg" alt="alt">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6">
+						<div class="item-client fadeIn wow" data-wow-iteration="1" data-wow-delay="0.3s">
+							<div class="item-client__image">
+								<img src="img/client14.svg" alt="alt">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -924,7 +840,7 @@
 	<script src="libs/animate/animate-css.js"></script>
 	<script src="libs/intl-tel-input-master/build/js/intlTelInput-jquery.min.js"></script>
 	<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-	<script src="js/common.js?ver=1.6"></script>
+	<script src="js/common.js?ver=1.8"></script>
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
