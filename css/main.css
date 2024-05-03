@@ -2821,3 +2821,22 @@ input[type=number]
 .btn-main.btn-main_block:hover {
     background: linear-gradient(181.46deg, #0C0E0D -112.5%, #535957 0.4%, #0C0E0D 98.53%);
 }
+
+.image-billbord {
+	position: relative;
+}
+.image-billbord__item {
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	transform: translateX(100vw);
+	transition: ease-out 2s;
+}
+.image-billbord__item.active {
+	transform: translateX(0vw);
+	opacity: 1;
+}
+.billbord .title-main {
+	margin-top: 30px;
+}

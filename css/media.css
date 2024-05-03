@@ -1765,6 +1765,19 @@
     .catalog .row_main > div:nth-child(2) {
         order: -4;
     }
+    .image-billbord {
+    height: 400px;
+    }
+    .image-billbord__item {
+        width: 100%;
+        transform: translateX(1000px);
+    }
+    .image-billbord img {
+        max-height: 100%;
+    }
+    .image-billbord__item {
+        height: 100%;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -2470,6 +2483,9 @@
         height: 39px;
         padding: 0 14px;
         font-size: 12px;
+    }
+    .image-billbord {
+        height: 265px;
     }
 }
 

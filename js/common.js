@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+
+
 	/*new*/
 		/*animate*/
 		new WOW().init();
@@ -198,6 +200,70 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	});
 
 
+		//billbord animation	
+		setInterval(function () {
+			setTimeout(function () {
+				$(".image-billbord__item:nth-child(1)").addClass("active");
+			  }, 500); 
+			  setTimeout(function () {
+				$(".image-billbord__item:nth-child(2)").addClass("active");
+			  }, 6000); 
+			  setTimeout(function () {
+				$(".image-billbord__item:nth-child(3)").addClass("active");
+			  }, 12000); 
+			  setTimeout(function () {
+				$(".image-billbord__item:nth-child(4)").addClass("active");
+			  }, 18000); 
+			  setTimeout(function () {
+				$(".image-billbord__item:nth-child(5)").addClass("active");
+			  }, 24000); 
+			  setTimeout(function () {
+				$(".image-billbord__item:nth-child(1)").removeClass("active");
+			  }, 6000); 
+			  setTimeout(function () {
+				$(".image-billbord__item:nth-child(2)").removeClass("active");
+			  }, 12000); 
+			  setTimeout(function () {
+				$(".image-billbord__item:nth-child(3)").removeClass("active");
+			  }, 18000); 
+			  setTimeout(function () {
+				$(".image-billbord__item:nth-child(4)").removeClass("active");
+			  }, 24000); 
+			  setTimeout(function () {
+				$(".image-billbord__item:nth-child(5)").removeClass("active");
+			  }, 30000); 
+		  }, 30000);
+	
+		  setTimeout(function () {
+			$(".image-billbord__item:nth-child(1)").addClass("active");
+		  }, 500); 
+		  setTimeout(function () {
+			$(".image-billbord__item:nth-child(2)").addClass("active");
+		  }, 6000); 
+		  setTimeout(function () {
+			$(".image-billbord__item:nth-child(3)").addClass("active");
+		  }, 12000); 
+		  setTimeout(function () {
+			$(".image-billbord__item:nth-child(4)").addClass("active");
+		  }, 18000); 
+		  setTimeout(function () {
+			$(".image-billbord__item:nth-child(5)").addClass("active");
+		  }, 24000); 
+		  setTimeout(function () {
+			$(".image-billbord__item:nth-child(1)").removeClass("active");
+		  }, 6000); 
+		  setTimeout(function () {
+			$(".image-billbord__item:nth-child(2)").removeClass("active");
+		  }, 12000); 
+		  setTimeout(function () {
+			$(".image-billbord__item:nth-child(3)").removeClass("active");
+		  }, 18000); 
+		  setTimeout(function () {
+			$(".image-billbord__item:nth-child(4)").removeClass("active");
+		  }, 24000); 
+		  setTimeout(function () {
+			$(".image-billbord__item:nth-child(5)").removeClass("active");
+		  }, 30000); 
 
 
 	 // стайлер для select
