@@ -204,7 +204,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		setInterval(function () {
 			setTimeout(function () {
 				$(".image-billbord__item:nth-child(1)").addClass("active");
-			  }, 500); 
+			  }, 0); 
 			  setTimeout(function () {
 				$(".image-billbord__item:nth-child(2)").addClass("active");
 			  }, 6000); 
@@ -236,7 +236,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	
 		  setTimeout(function () {
 			$(".image-billbord__item:nth-child(1)").addClass("active");
-		  }, 500); 
+		  }, 0); 
 		  setTimeout(function () {
 			$(".image-billbord__item:nth-child(2)").addClass("active");
 		  }, 6000); 
