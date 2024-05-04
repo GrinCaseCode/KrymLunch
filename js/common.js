@@ -201,69 +201,37 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 
 
 		//billbord animation	
+
+		const items = document.querySelectorAll(".image-billbord__item");
+		let lastTime = items.length * 6000;
+
+			for (let i = 0; i < items.length; i++) {
+				var startItem = i * 6000;
+				var endTime = i * 6000 + 6000;
+				let lastTime = items.length * 6000;
+
+				setTimeout(function () {
+					items[i].classList.add("active");
+				}, startItem); 
+				setTimeout(function () {
+					items[i].classList.remove("active");
+				 }, endTime); 
+			 }
+
 		setInterval(function () {
-			setTimeout(function () {
-				$(".image-billbord__item:nth-child(1)").addClass("active");
-			  }, 0); 
-			  setTimeout(function () {
-				$(".image-billbord__item:nth-child(2)").addClass("active");
-			  }, 6000); 
-			  setTimeout(function () {
-				$(".image-billbord__item:nth-child(3)").addClass("active");
-			  }, 12000); 
-			  setTimeout(function () {
-				$(".image-billbord__item:nth-child(4)").addClass("active");
-			  }, 18000); 
-			  setTimeout(function () {
-				$(".image-billbord__item:nth-child(5)").addClass("active");
-			  }, 24000); 
-			  setTimeout(function () {
-				$(".image-billbord__item:nth-child(1)").removeClass("active");
-			  }, 6000); 
-			  setTimeout(function () {
-				$(".image-billbord__item:nth-child(2)").removeClass("active");
-			  }, 12000); 
-			  setTimeout(function () {
-				$(".image-billbord__item:nth-child(3)").removeClass("active");
-			  }, 18000); 
-			  setTimeout(function () {
-				$(".image-billbord__item:nth-child(4)").removeClass("active");
-			  }, 24000); 
-			  setTimeout(function () {
-				$(".image-billbord__item:nth-child(5)").removeClass("active");
-			  }, 30000); 
-		  }, 30000);
-	
-		  setTimeout(function () {
-			$(".image-billbord__item:nth-child(1)").addClass("active");
-		  }, 0); 
-		  setTimeout(function () {
-			$(".image-billbord__item:nth-child(2)").addClass("active");
-		  }, 6000); 
-		  setTimeout(function () {
-			$(".image-billbord__item:nth-child(3)").addClass("active");
-		  }, 12000); 
-		  setTimeout(function () {
-			$(".image-billbord__item:nth-child(4)").addClass("active");
-		  }, 18000); 
-		  setTimeout(function () {
-			$(".image-billbord__item:nth-child(5)").addClass("active");
-		  }, 24000); 
-		  setTimeout(function () {
-			$(".image-billbord__item:nth-child(1)").removeClass("active");
-		  }, 6000); 
-		  setTimeout(function () {
-			$(".image-billbord__item:nth-child(2)").removeClass("active");
-		  }, 12000); 
-		  setTimeout(function () {
-			$(".image-billbord__item:nth-child(3)").removeClass("active");
-		  }, 18000); 
-		  setTimeout(function () {
-			$(".image-billbord__item:nth-child(4)").removeClass("active");
-		  }, 24000); 
-		  setTimeout(function () {
-			$(".image-billbord__item:nth-child(5)").removeClass("active");
-		  }, 30000); 
+			for (let i = 0; i < items.length; i++) {
+				var startItem = i * 6000;
+				var endTime = i * 6000 + 6000;
+
+				setTimeout(function () {
+					items[i].classList.add("active");
+				}, startItem); 
+				setTimeout(function () {
+					items[i].classList.remove("active");
+				}, endTime); 
+			}
+				}, lastTime);
+			 
 
 
 	 // стайлер для select
