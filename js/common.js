@@ -208,7 +208,6 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			for (let i = 0; i < items.length; i++) {
 				var startItem = i * 6000;
 				var endTime = i * 6000 + 6000;
-				let lastTime = items.length * 6000;
 
 				setTimeout(function () {
 					items[i].classList.add("active");
