@@ -1,6 +1,35 @@
 $(document).ready(function() {
 
+	//billbord animation	
 
+	const items = document.querySelectorAll(".image-billbord__item");
+	let lastTime = items.length * 6000;
+
+		for (let i = 0; i < items.length; i++) {
+			var startItem = i * 6000;
+			var endTime = i * 6000 + 6000;
+
+			setTimeout(function () {
+				items[i].classList.add("active");
+			}, startItem); 
+			setTimeout(function () {
+				items[i].classList.remove("active");
+			 }, endTime); 
+		 }
+
+	setInterval(function () {
+		for (let i = 0; i < items.length; i++) {
+			var startItem = i * 6000;
+			var endTime = i * 6000 + 6000;
+
+			setTimeout(function () {
+				items[i].classList.add("active");
+			}, startItem); 
+			setTimeout(function () {
+				items[i].classList.remove("active");
+			}, endTime); 
+		}
+			}, lastTime);
 
 	/*new*/
 		/*animate*/
@@ -198,38 +227,6 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 			spinner.find("input").trigger("change");
 		});
 	});
-
-
-		//billbord animation	
-
-		const items = document.querySelectorAll(".image-billbord__item");
-		let lastTime = items.length * 6000;
-
-			for (let i = 0; i < items.length; i++) {
-				var startItem = i * 6000;
-				var endTime = i * 6000 + 6000;
-
-				setTimeout(function () {
-					items[i].classList.add("active");
-				}, startItem); 
-				setTimeout(function () {
-					items[i].classList.remove("active");
-				 }, endTime); 
-			 }
-
-		setInterval(function () {
-			for (let i = 0; i < items.length; i++) {
-				var startItem = i * 6000;
-				var endTime = i * 6000 + 6000;
-
-				setTimeout(function () {
-					items[i].classList.add("active");
-				}, startItem); 
-				setTimeout(function () {
-					items[i].classList.remove("active");
-				}, endTime); 
-			}
-				}, lastTime);
 			 
 
 
