@@ -5,6 +5,7 @@ $(document).ready(function() {
 	const items = document.querySelectorAll(".image-billbord__item");
 	let lastTime = items.length * 6000;
 
+	function animationSlider() {
 		for (let i = 0; i < items.length; i++) {
 			var startItem = i * 6000;
 			var endTime = i * 6000 + 6000;
@@ -16,20 +17,13 @@ $(document).ready(function() {
 				items[i].classList.remove("active");
 			 }, endTime); 
 		 }
+	}
+
+	animationSlider()
 
 	setInterval(function () {
-		for (let i = 0; i < items.length; i++) {
-			var startItem = i * 6000;
-			var endTime = i * 6000 + 6000;
-
-			setTimeout(function () {
-				items[i].classList.add("active");
-			}, startItem); 
-			setTimeout(function () {
-				items[i].classList.remove("active");
-			}, endTime); 
-		}
-			}, lastTime);
+		animationSlider()
+	}, lastTime);
 
 	/*new*/
 		/*animate*/
